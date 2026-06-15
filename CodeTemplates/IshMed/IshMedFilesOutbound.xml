@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
+  <id>b0dccaec-3c51-4946-896d-29cba1658291</id>
+  <name>IshMedFilesOutbound</name>
+  <revision>2</revision>
+  <lastModified>
+    <time>1781520349428</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <contextSet>
+    <delegate>
+      <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+      <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+      <contextType>SOURCE_RECEIVER</contextType>
+      <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+      <contextType>DESTINATION_DISPATCHER</contextType>
+    </delegate>
+  </contextSet>
+  <properties class="com.mirth.connect.model.codetemplates.BasicCodeTemplateProperties">
+    <type>FUNCTION</type>
+    <code msync-fileref="IshMedFilesOutbound.js"/>
+  </properties>
+</codeTemplate>

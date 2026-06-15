@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><channel version="4.4.2">
+  <id>6e02a639-0043-4964-9b65-43581d47a4e4</id>
+  <nextMetaDataId>3</nextMetaDataId>
+  <name>backend_request_configuration</name>
+  <description>This channel respponsability for create the configuration of each customer, setup in the database of Portal.</description>
+  <revision>2</revision>
+  <sourceConnector version="4.4.2">
+    <metaDataId>0</metaDataId>
+    <name>sourceConnector</name>
+    <properties class="com.mirth.connect.connectors.js.JavaScriptReceiverProperties" version="4.4.2">
+      <pluginProperties/>
+      <pollConnectorProperties version="4.4.2">
+        <pollingType>INTERVAL</pollingType>
+        <pollOnStart>true</pollOnStart>
+        <pollingFrequency>30000</pollingFrequency>
+        <pollingHour>0</pollingHour>
+        <pollingMinute>0</pollingMinute>
+        <cronJobs/>
+        <pollConnectorPropertiesAdvanced>
+          <weekly>true</weekly>
+          <inactiveDays>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+            <boolean>false</boolean>
+          </inactiveDays>
+          <dayOfMonth>1</dayOfMonth>
+          <allDay>true</allDay>
+          <startingHour>8</startingHour>
+          <startingMinute>0</startingMinute>
+          <endingHour>17</endingHour>
+          <endingMinute>0</endingMinute>
+        </pollConnectorPropertiesAdvanced>
+      </pollConnectorProperties>
+      <sourceConnectorProperties version="4.4.2">
+        <responseVariable>None</responseVariable>
+        <respondAfterProcessing>true</respondAfterProcessing>
+        <processBatch>false</processBatch>
+        <firstResponse>false</firstResponse>
+        <processingThreads>1</processingThreads>
+        <resourceIds class="linked-hash-map">
+          <entry>
+            <string>Default Resource</string>
+            <string>[Default Resource]</string>
+          </entry>
+        </resourceIds>
+        <queueBufferSize>1000</queueBufferSize>
+      </sourceConnectorProperties>
+      <script msync-fileref="sourceConnector-sourceConnector.js"/>
+    </properties>
+    <transformer version="4.4.2">
+      <elements>
+        <com.mirth.connect.plugins.javascriptstep.JavaScriptStep version="4.4.2">
+          <name>Source Router</name>
+          <sequenceNumber>0</sequenceNumber>
+          <enabled>true</enabled>
+          <script msync-fileref="sourceConnector-transformer-step-0-Source Router.js"/>
+        </com.mirth.connect.plugins.javascriptstep.JavaScriptStep>
+      </elements>
+      <inboundTemplate encoding="base64"/>
+      <outboundTemplate encoding="base64"/>
+      <inboundDataType>JSON</inboundDataType>
+      <outboundDataType>JSON</outboundDataType>
+      <inboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+        <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+          <splitType>JavaScript</splitType>
+          <batchScript/>
+        </batchProperties>
+      </inboundProperties>
+      <outboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+        <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+          <splitType>JavaScript</splitType>
+          <batchScript/>
+        </batchProperties>
+      </outboundProperties>
+    </transformer>
+    <filter version="4.4.2">
+      <elements/>
+    </filter>
+    <transportName>JavaScript Reader</transportName>
+    <mode>SOURCE</mode>
+    <enabled>true</enabled>
+    <waitForPrevious>true</waitForPrevious>
+  </sourceConnector>
+  <destinationConnectors>
+    <connector version="4.4.2">
+      <metaDataId>1</metaDataId>
+      <name>set_appointment_configuration</name>
+      <properties class="com.mirth.connect.connectors.http.HttpDispatcherProperties" version="4.4.2">
+        <pluginProperties/>
+        <destinationConnectorProperties version="4.4.2">
+          <queueEnabled>false</queueEnabled>
+          <sendFirst>false</sendFirst>
+          <retryIntervalMillis>10000</retryIntervalMillis>
+          <regenerateTemplate>false</regenerateTemplate>
+          <retryCount>0</retryCount>
+          <rotate>false</rotate>
+          <includeFilterTransformer>false</includeFilterTransformer>
+          <threadCount>1</threadCount>
+          <threadAssignmentVariable/>
+          <validateResponse>false</validateResponse>
+          <resourceIds class="linked-hash-map">
+            <entry>
+              <string>Default Resource</string>
+              <string>[Default Resource]</string>
+            </entry>
+          </resourceIds>
+          <queueBufferSize>1000</queueBufferSize>
+          <reattachAttachments>true</reattachAttachments>
+        </destinationConnectorProperties>
+        <host>${url}</host>
+        <useProxyServer>false</useProxyServer>
+        <proxyAddress/>
+        <proxyPort/>
+        <method>get</method>
+        <headers class="linked-hash-map">
+          <entry>
+            <string>Authorization</string>
+            <list>
+              <string>${token}</string>
+            </list>
+          </entry>
+        </headers>
+        <parameters class="linked-hash-map"/>
+        <useHeadersVariable>false</useHeadersVariable>
+        <headersVariable/>
+        <useParametersVariable>false</useParametersVariable>
+        <parametersVariable/>
+        <responseXmlBody>false</responseXmlBody>
+        <responseParseMultipart>true</responseParseMultipart>
+        <responseIncludeMetadata>false</responseIncludeMetadata>
+        <responseBinaryMimeTypes>application/.*(?&lt;!json|xml)$|image/.*|video/.*|audio/.*</responseBinaryMimeTypes>
+        <responseBinaryMimeTypesRegex>true</responseBinaryMimeTypesRegex>
+        <multipart>false</multipart>
+        <useAuthentication>false</useAuthentication>
+        <authenticationType>Basic</authenticationType>
+        <usePreemptiveAuthentication>false</usePreemptiveAuthentication>
+        <username/>
+        <password/>
+        <content>{}</content>
+        <contentType>application/json</contentType>
+        <dataTypeBinary>false</dataTypeBinary>
+        <charset>UTF-8</charset>
+        <socketTimeout>30000</socketTimeout>
+      </properties>
+      <transformer version="4.4.2">
+        <elements/>
+        <inboundDataType>JSON</inboundDataType>
+        <outboundDataType>JSON</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+            <splitType>JavaScript</splitType>
+            <batchScript/>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.json.JSONDataTypeProperties" version="4.4.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.json.JSONBatchProperties" version="4.4.2">
+            <splitType>JavaScript</splitType>
+            <batchScript/>
+          </batchProperties>
+        </outboundProperties>
+      </transformer>
+      <responseTransformer version="4.4.2">
+        <elements>
+          <com.mirth.connect.plugins.javascriptstep.JavaScriptStep version="4.4.2">
+            <sequenceNumber>0</sequenceNumber>
+            <enabled>true</enabled>
+            <script msync-fileref="destinationConnector-set_appointment_configuration-responseTransformer-step-0.js"/>
+          </com.mirth.connect.plugins.javascriptstep.JavaScriptStep>
+        </elements>
+        <inboundTemplate encoding="base64"/>
+        <outboundTemplate encoding="base64"/>
+        <inboundDataType>RAW</inboundDataType>
+        <outboundDataType>RAW</outboundDataType>
+        <inboundProperties class="com.mirth.connect.plugins.datatypes.raw.RawDataTypeProperties" version="4.4.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.raw.RawBatchProperties" version="4.4.2">
+            <splitType>JavaScript</splitType>
+            <batchScript/>
+          </batchProperties>
+        </inboundProperties>
+        <outboundProperties class="com.mirth.connect.plugins.datatypes.raw.RawDataTypeProperties" version="4.4.2">
+          <batchProperties class="com.mirth.connect.plugins.datatypes.raw.RawBatchProperties" version="4.4.2">
+            <splitType>JavaScript</splitType>
+            <batchScript/>
+          </batchProperties>
+        </outboundProperties>
+      </responseTransformer>
+      <filter version="4.4.2">
+        <elements/>
+      </filter>
+      <transportName>HTTP Sender</transportName>
+      <mode>DESTINATION</mode>
+      <enabled>true</enabled>
+      <waitForPrevious>true</waitForPrevious>
+    </connector>
+  </destinationConnectors>
+  <preprocessingScript msync-fileref="PreprocessingScript.js"/>
+  <postprocessingScript msync-fileref="PostprocessingScript.js"/>
+  <deployScript msync-fileref="DeployScript.js"/>
+  <undeployScript msync-fileref="UndeployScript.js"/>
+  <properties version="4.4.2">
+    <clearGlobalChannelMap>true</clearGlobalChannelMap>
+    <messageStorageMode>DEVELOPMENT</messageStorageMode>
+    <encryptData>false</encryptData>
+    <encryptAttachments>false</encryptAttachments>
+    <encryptCustomMetaData>false</encryptCustomMetaData>
+    <removeContentOnCompletion>false</removeContentOnCompletion>
+    <removeOnlyFilteredOnCompletion>false</removeOnlyFilteredOnCompletion>
+    <removeAttachmentsOnCompletion>false</removeAttachmentsOnCompletion>
+    <initialState>STARTED</initialState>
+    <storeAttachments>true</storeAttachments>
+    <metaDataColumns>
+      <metaDataColumn>
+        <name>TENANT_ID</name>
+        <type>STRING</type>
+        <mappingName>tenant_id</mappingName>
+      </metaDataColumn>
+      <metaDataColumn>
+        <name>CUSTOMER</name>
+        <type>STRING</type>
+        <mappingName>customer</mappingName>
+      </metaDataColumn>
+    </metaDataColumns>
+    <attachmentProperties version="4.4.2">
+      <type>None</type>
+      <properties/>
+    </attachmentProperties>
+    <resourceIds class="linked-hash-map">
+      <entry>
+        <string>Default Resource</string>
+        <string>[Default Resource]</string>
+      </entry>
+    </resourceIds>
+  </properties>
+  <exportData>
+    <metadata>
+      <enabled>false</enabled>
+      <lastModified>
+        <time>1711365989408</time>
+        <timezone>America/Sao_Paulo</timezone>
+      </lastModified>
+      <pruningSettings>
+        <pruneMetaDataDays>30</pruneMetaDataDays>
+        <pruneContentDays>30</pruneContentDays>
+        <archiveEnabled>true</archiveEnabled>
+        <pruneErroredMessages>false</pruneErroredMessages>
+      </pruningSettings>
+      <userId>4</userId>
+    </metadata>
+    <dependentIds/>
+    <dependencyIds/>
+    <channelTags>
+      <channelTag>
+        <id>bfd355c5-011f-4fa0-9e56-477c91f95815</id>
+        <name>backend</name>
+        <channelIds>
+          <string>6e02a639-0043-4964-9b65-43581d47a4e4</string>
+          <string>31eac9d4-b29c-449d-9ecf-cdeadf233fe2</string>
+          <string>461a0cd0-e8b9-4ce3-9d0a-b32ed44689ed</string>
+          <string>c353e015-995a-4b8d-ae7c-2015fad3e9a1</string>
+          <string>4b772c78-9cd0-422b-b7a2-04399cfc0f20</string>
+          <string>d7002353-0168-4a40-9251-e135924c2893</string>
+          <string>ceac379b-3fc9-4a30-9527-1c2e5268db64</string>
+          <string>5c9e9411-a977-4ad7-9291-e61965adf2a4</string>
+          <string>0a60b193-366d-4ce6-9c45-f14f796e552d</string>
+        </channelIds>
+        <backgroundColor>
+          <red>102</red>
+          <green>153</green>
+          <blue>255</blue>
+          <alpha>255</alpha>
+        </backgroundColor>
+      </channelTag>
+    </channelTags>
+  </exportData>
+</channel>

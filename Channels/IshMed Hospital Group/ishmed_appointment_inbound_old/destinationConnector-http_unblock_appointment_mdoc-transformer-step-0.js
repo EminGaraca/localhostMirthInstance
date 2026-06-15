@@ -1,0 +1,1 @@
+msg = IshMedAppointment().inbound().siu23OrSiu24()

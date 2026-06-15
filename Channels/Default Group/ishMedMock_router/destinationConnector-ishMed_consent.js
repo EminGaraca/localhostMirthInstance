@@ -1,0 +1,1 @@
+return ResponseFactory.getSentResponse(JSON.stringify({ "message": true }))

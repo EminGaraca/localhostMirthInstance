@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?><map>
+  <entry>
+    <string>cfg</string>
+    <com.mirth.connect.util.ConfigurationProperty>
+      <value>{
+  "qa": {
+    "tenant": [
+      {
+        "description": "ishmed",
+        "tenant": "239b7ebd-9c11-5c6e-2dd6-9db142b2fb5c"
+      }
+    ],
+    "base": {
+      "mirth": {
+        "saveFilePath": "/opt/connect/integration"
+      },
+      "url": {
+        "base_url": "http://mdoc-ms-api-gateway.mdoc:8080",
+        "base_url_qa": "http://mdoc-ms-api-gateway.mdoc:8080",
+        "base_url_g7": "https://mdoc-gen7-apps-dev.obs.eu-de.otc.t-systems.com/upload-general",
+        "path": {
+          "questionnaire_import": "/api/integrations/v2/questionnaire-template",
+          "userFetch": "/api/integrations/v1/users",
+          "template": "/api/integrations/v2/questionnaire-template",
+          "userCaseFetch": "/api/integrations/v1/cases/user",
+          "userCaseFetchV2": "/api/integrations/v2/patient",
+          "fileUploadv2": "/api/integrations/v2/files",
+          "filesFetch": "/api/integrations/v1/files",
+          "caseFetch": "/api/integrations/v1/cases",
+          "locationFetch": "/api/integrations/v1/organizations/clinic",
+          "appointmentFetch": "/api/integrations/v1/appointments",
+          "appointmentFetchV2": "/api/integrations/v2/appointments",
+          "appointmentPut": "/api/integrations/v1/appointments/outbound",
+          "appointmentCreate": "/api/integrations/v1/appointments",
+          "filesDownload": "/api/files/v1/files/download",
+          "assign": "/api/integrations/v1/polls/assign",
+          "fetchPoll": "/api/integrations/v1/polls",
+          "getFilesDownloadBase64": "/api/files/v1/files/integration/",
+          "getDepartments": "/api/integrations/v1/organizations/clinic",
+          "patientOnboardingV2": "/api/integrations/v2/patient/onboard",
+          "patchPatientV2": "/api/integrations/v2/patient/{{patient}}/externalid/{{externalid}}/externalUniqueId/{{externalUniqueId}}",
+          "appointmentV2": "/api/integrations/v2/appointments",
+          "appointmentCancel": "/api/integrations/v2/appointments",
+          "patient": "/api/integrations/v2/patient",
+          "createOrUpdateDepamentv2": "/api/integrations/v2/units",
+          "assignV2": "/api/integrations/v2/questionnaire/assign",
+          "createBlockedOrUnblocked": "/api/integrations/v2/slots/status",
+          "checkToken": "/api/authorization/v1/account/token",
+          "signIn": "/api/authorization/v1/account/login",
+          "mfa": "/api/authorization/v2/auth/token"
+        },
+        "token": {
+          "path_login": "/api/authorization/v1/account/login"
+        }
+      }
+    },
+    "mock": {
+      "imedone": [
+        "freeslot"
+      ]
+    },
+    "ishmed": {
+      "configuration": {
+        "clinicId": "1I",
+        "timezone": "Europe/Berlin",
+        "timeout": "15000",
+        "base_url": "http://nextgen-mtls-out-nginx:8444/server1",
+        "base_url_archiv": "http://nextgen-mtls-out-nginx:8444/archiv",
+        "path": {
+          "consent": "/sap/ishmed/mci/http_resp?sap-client=430&amp;process=ZMDOC_RECEIVE_CONSENT&amp;loglevel=1&amp;lang=EN",
+          "files": "/sap/ishmed/mci/http_resp?sap-client=430&amp;process=ZMDOC_RECEIVE_MDM&amp;loglevel=1&amp;lang=EN",
+          "questionnaire": "/sap/ishmed/mci/http_resp?sap-client=430&amp;process=ZMDOC_QUEST_RESPONSE&amp;loglevel=1&amp;lang=EN",
+          "freeslots": "/sap/ishmed/mci/http_resp?sap-client=430&amp;process=ZMDOC_GET_FREE_SLOT_APP&amp;loglevel=1&amp;lang=EN",
+          "appointment": "/sap/ishmed/mci/http_resp?sap-client=430&amp;process=ZMDOC_CREATE_APPOINTMENT&amp;loglevel=1&amp;lang=EN"
+        },
+        "auth": {
+          "login": {
+            "user": "mirth.cgm",
+            "pass": "Mdoc@2022",
+            "tenant": "a40f9a99-ea70-4ec1-a003-792f85fd89a5"
+          },
+          "mfa": {
+            "client_id": "mirth.interoperability",
+            "client_secret": "ni9ZyoXDcQ58Yqd8qUcytRRJilWhkFfa",
+            "grant_type": "client_credentials",
+            "tenant": "239b7ebd-9c11-5c6e-2dd6-9db142b2fb5c"
+          },
+          "ishmed": {
+            "user": "SST-MDOC",
+            "pass": "AmeosMDOC2024!"
+          }
+        },
+        "messageOutboundAuthorization": {
+          "files": true,
+          "questionnaireTemplate": true,
+          "questionnaireAnswer": true,
+          "patientOnboarding": true,
+          "freeSlot": true,
+          "consent": true,
+          "appointment": true
+        },
+        "integrationType": "CGM",
+        "location": {
+          "clinicId": "1I",
+          "specialty": "BPSTPSY1",
+          "appointmentType": "PSY_THER"
+        },
+        "appointment": {
+          "appointmentType": "IN_PERSON",
+          "appointmentCategory": "IN_PERSON",
+          "specialty": "IN_PERSON",
+          "integrationType": "CGM",
+          "outbound": {
+            "consultationType": true
+          }
+        }
+      },
+      "validation": {
+        "outbound": {
+          "patientOnboarding": {
+            "fieldMandatory": [
+              "KlinikID",
+              "CaseUniqueIdentifier",
+              "PatientUniqueIdentifier"
+            ]
+          },
+          "medicalCase": {
+            "fieldMandatory": [
+              "externalId"
+            ]
+          },
+          "patient": {
+            "fieldMandatory": []
+          },
+          "file": {
+            "fieldMandatory": []
+          },
+          "appointment": {
+            "therapy": {
+              "fieldMandatory": [
+                "NVerordnungsTexte",
+                "CaseUniqueIdentifier"
+              ]
+            },
+            "fieldMandatory": [
+              "consultationType"
+            ]
+          },
+          "questionnaire": {
+            "fieldMandatory": [
+              "idQuestionnaire"
+            ]
+          }
+        },
+        "inbound": {
+          "patientOnboarding": {
+            "fieldMandatory": []
+          },
+          "medicalCase": {
+            "fieldMandatory": []
+          },
+          "patient": {
+            "fieldMandatory": []
+          },
+          "file": {
+            "fieldMandatory": []
+          },
+          "appointment": {
+            "therapy": {
+              "fieldMandatory": []
+            },
+            "fieldMandatory": []
+          },
+          "questionnaire": {
+            "fieldMandatory": []
+          }
+        }
+      },
+	  "appointment": {
+        "configuration": {
+          "speciality": {
+            "outbound": {
+              "consultationType": false
+            }
+          }
+        }
+      }
+    }
+  }
+}</value>
+    </com.mirth.connect.util.ConfigurationProperty>
+  </entry>
+</map>

@@ -1,0 +1,1 @@
+msg = IshMedFilesOutbound().getFilesBase64()

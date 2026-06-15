@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
+  <id>bab4b0b8-0ec6-44fa-aa9f-274d87fc3540</id>
+  <name>Util2</name>
+  <revision>10</revision>
+  <lastModified>
+    <time>1780326317172</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <contextSet>
+    <delegate>
+      <contextType>CHANNEL_PREPROCESSOR</contextType>
+      <contextType>GLOBAL_PREPROCESSOR</contextType>
+      <contextType>GLOBAL_POSTPROCESSOR</contextType>
+      <contextType>CHANNEL_UNDEPLOY</contextType>
+      <contextType>SOURCE_RECEIVER</contextType>
+      <contextType>CHANNEL_ATTACHMENT</contextType>
+      <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+      <contextType>DESTINATION_DISPATCHER</contextType>
+      <contextType>CHANNEL_DEPLOY</contextType>
+      <contextType>CHANNEL_POSTPROCESSOR</contextType>
+      <contextType>GLOBAL_UNDEPLOY</contextType>
+      <contextType>GLOBAL_DEPLOY</contextType>
+      <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+      <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+      <contextType>CHANNEL_BATCH</contextType>
+    </delegate>
+  </contextSet>
+  <properties class="com.mirth.connect.model.codetemplates.BasicCodeTemplateProperties">
+    <type>FUNCTION</type>
+    <code msync-fileref="Util2.js"/>
+  </properties>
+</codeTemplate>

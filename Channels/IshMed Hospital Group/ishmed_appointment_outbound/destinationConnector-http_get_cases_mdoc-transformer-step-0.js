@@ -1,0 +1,1 @@
+IshMedAppointment().outbound().getCases()

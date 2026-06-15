@@ -1,0 +1,1 @@
+return CommonBackend().channel(sourceMap, responseMap, message)

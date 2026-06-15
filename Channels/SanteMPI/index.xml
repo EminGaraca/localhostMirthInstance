@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><channelGroup version="4.4.2">
+  <id>de622700-8a2c-44a4-af36-2f214414cf86</id>
+  <name>SanteMPI</name>
+  <revision>1</revision>
+  <lastModified>
+    <time>1780326298943</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <description/>
+  <channels>
+    <channel version="4.4.2">
+      <id>c4da17b4-2e4e-4a41-a26d-fc162467ed61</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>70dc25c7-501e-4d71-a015-ad88234e64ac</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>3dbc000a-3dcd-49cf-99de-519d145f2857</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>10c31be0-0bf7-4829-b12a-33e2628bba13</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>dc4f5b99-7155-4425-952e-de1b7bc2cc27</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>ef2330c3-9d26-4be3-897c-1b83e385e55e</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>b61fe5c3-a2f2-42ef-bfa4-850ab0a03d5b</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>970ebc36-e0a9-4f88-8294-f8b2d63bfd4b</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>db28f0e2-330c-4929-80c3-eba11e868c88</id>
+      <revision>0</revision>
+    </channel>
+  </channels>
+</channelGroup>

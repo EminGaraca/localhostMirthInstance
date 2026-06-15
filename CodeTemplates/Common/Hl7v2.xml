@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
+  <id>5f760790-ecf9-42ee-b60c-6cf1fabbfbff</id>
+  <name>Hl7v2</name>
+  <revision>5</revision>
+  <lastModified>
+    <time>1780326317070</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <contextSet>
+    <delegate>
+      <contextType>CHANNEL_PREPROCESSOR</contextType>
+      <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+      <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+      <contextType>CHANNEL_UNDEPLOY</contextType>
+      <contextType>SOURCE_RECEIVER</contextType>
+      <contextType>CHANNEL_ATTACHMENT</contextType>
+      <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+      <contextType>CHANNEL_BATCH</contextType>
+      <contextType>DESTINATION_DISPATCHER</contextType>
+      <contextType>CHANNEL_DEPLOY</contextType>
+      <contextType>CHANNEL_POSTPROCESSOR</contextType>
+    </delegate>
+  </contextSet>
+  <properties class="com.mirth.connect.model.codetemplates.BasicCodeTemplateProperties">
+    <type>FUNCTION</type>
+    <code msync-fileref="Hl7v2.js"/>
+  </properties>
+</codeTemplate>

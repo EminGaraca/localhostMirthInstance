@@ -1,0 +1,1 @@
+return SanteMPIIntegration.resolvePatientId();

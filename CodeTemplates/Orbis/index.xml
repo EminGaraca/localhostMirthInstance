@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplateLibrary version="4.4.2">
+  <id>378ac1c5-2b0b-4529-8bdf-3d9c30a4b45b</id>
+  <name>Orbis</name>
+  <revision>4</revision>
+  <lastModified>
+    <time>1780326313935</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <description/>
+  <includeNewChannels>false</includeNewChannels>
+  <enabledChannelIds>
+    <string>5aac53b0-0110-4ad8-975b-9d0bfc09b049</string>
+    <string>4d840fb3-dcab-4ca0-89ef-2b52b6f353ae</string>
+    <string>e6004e04-eea7-408f-8d5c-138d344d370a</string>
+    <string>fe3e7765-1035-4607-8f39-7cd0e6721edd</string>
+  </enabledChannelIds>
+  <disabledChannelIds>
+    <string>be077fd1-f356-40aa-a526-c72eb3cb366f</string>
+    <string>e07ad2ec-373b-478e-8152-aa75d10f7aff</string>
+    <string>0a60b193-366d-4ce6-9c45-f14f796e552d</string>
+    <string>9dba902f-2e01-47fd-90b9-398760436f15</string>
+    <string>8e08ad18-1354-4832-a5e4-5c4d344433b6</string>
+    <string>dc4f5b99-7155-4425-952e-de1b7bc2cc27</string>
+    <string>ef2330c3-9d26-4be3-897c-1b83e385e55e</string>
+    <string>6e02a639-0043-4964-9b65-43581d47a4e4</string>
+    <string>970ebc36-e0a9-4f88-8294-f8b2d63bfd4b</string>
+    <string>d7002353-0168-4a40-9251-e135924c2893</string>
+    <string>5c9e9411-a977-4ad7-9291-e61965adf2a4</string>
+    <string>11ebdb5d-dbae-4995-985b-cd743237678e</string>
+    <string>b61fe5c3-a2f2-42ef-bfa4-850ab0a03d5b</string>
+    <string>c4da17b4-2e4e-4a41-a26d-fc162467ed61</string>
+    <string>94e391b0-6911-45a9-bdcc-b331e554e451</string>
+    <string>31eac9d4-b29c-449d-9ecf-cdeadf233fe2</string>
+    <string>c353e015-995a-4b8d-ae7c-2015fad3e9a1</string>
+    <string>4b772c78-9cd0-422b-b7a2-04399cfc0f20</string>
+    <string>ceac379b-3fc9-4a30-9527-1c2e5268db64</string>
+    <string>98bcf22f-7e25-4f2a-b1ef-b9974ae111bb</string>
+    <string>c2260e0f-e75e-429a-976e-c06bd6ff60e4</string>
+    <string>db28f0e2-330c-4929-80c3-eba11e868c88</string>
+    <string>70dc25c7-501e-4d71-a015-ad88234e64ac</string>
+    <string>437204ce-7a0a-495b-b55d-a465650c1db5</string>
+    <string>461a0cd0-e8b9-4ce3-9d0a-b32ed44689ed</string>
+    <string>3dbc000a-3dcd-49cf-99de-519d145f2857</string>
+    <string>10c31be0-0bf7-4829-b12a-33e2628bba13</string>
+    <string>adb76cfd-82de-408e-a482-38cb2ceff4aa</string>
+  </disabledChannelIds>
+  <codeTemplates>
+    <codeTemplate version="4.4.2">
+      <id>2090d8dc-3cab-4780-b1b9-80d90693b55d</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>538f2144-7474-425b-80ae-76b4c1337830</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>4cb06a3c-3e7c-4ab1-91ff-627d62be9127</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>aa039efb-5f39-43b7-a33e-368904664b9c</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>931385e1-b7ec-46b1-8d01-10dde40bd3fa</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>d8a8a65c-d354-4f00-a5f3-f012f3d18c41</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>8a76b206-6366-4c17-8c1c-43e13eac97a3</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>89b7fd35-2706-4084-9a9b-075130bc057f</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>8eb68268-4d8c-48f3-a4ef-ec3edc3d373a</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>74f109f0-0a30-44a4-b83f-681b82c2faea</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>216c3595-20de-446d-9c8a-a265087d3a64</id>
+    </codeTemplate>
+    <codeTemplate version="4.4.2">
+      <id>88259354-fd77-4202-a4a6-c6771e8ce21d</id>
+    </codeTemplate>
+  </codeTemplates>
+</codeTemplateLibrary>

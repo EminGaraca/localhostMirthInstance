@@ -1,0 +1,1 @@
+msg = IshMedFiles().inbound().mdmT02()

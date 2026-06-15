@@ -1,0 +1,1 @@
+msg = IshMedQuestionnaire().outbound().reply()

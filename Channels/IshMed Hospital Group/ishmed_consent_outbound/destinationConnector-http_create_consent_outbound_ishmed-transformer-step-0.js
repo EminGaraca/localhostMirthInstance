@@ -1,0 +1,1 @@
+msg = IshMedConsent().outbound().create()

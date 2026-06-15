@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
+  <id>824e478e-3ee6-4a7f-8772-a9b4ed2c6a28</id>
+  <name>SanteMPIIntegration</name>
+  <revision>1</revision>
+  <lastModified>
+    <time>1780326317892</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <contextSet>
+    <delegate>
+      <contextType>CHANNEL_PREPROCESSOR</contextType>
+      <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+      <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+      <contextType>SOURCE_RECEIVER</contextType>
+      <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+      <contextType>DESTINATION_DISPATCHER</contextType>
+    </delegate>
+  </contextSet>
+  <properties class="com.mirth.connect.model.codetemplates.BasicCodeTemplateProperties">
+    <type>FUNCTION</type>
+    <code msync-fileref="SanteMPIIntegration.js"/>
+  </properties>
+</codeTemplate>

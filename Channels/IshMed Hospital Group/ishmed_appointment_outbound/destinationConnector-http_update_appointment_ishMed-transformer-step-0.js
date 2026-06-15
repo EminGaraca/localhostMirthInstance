@@ -1,0 +1,1 @@
+msg = IshMedAppointment().outbound().create()

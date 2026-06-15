@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><codeTemplate version="4.4.2">
+  <id>b269fccc-9e22-4df2-98df-3f5008d28ba0</id>
+  <name>CommonLogger</name>
+  <revision>4</revision>
+  <lastModified>
+    <time>1780326316999</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <contextSet>
+    <delegate>
+      <contextType>CHANNEL_PREPROCESSOR</contextType>
+      <contextType>GLOBAL_PREPROCESSOR</contextType>
+      <contextType>GLOBAL_POSTPROCESSOR</contextType>
+      <contextType>CHANNEL_UNDEPLOY</contextType>
+      <contextType>SOURCE_RECEIVER</contextType>
+      <contextType>CHANNEL_ATTACHMENT</contextType>
+      <contextType>DESTINATION_RESPONSE_TRANSFORMER</contextType>
+      <contextType>DESTINATION_DISPATCHER</contextType>
+      <contextType>CHANNEL_DEPLOY</contextType>
+      <contextType>CHANNEL_POSTPROCESSOR</contextType>
+      <contextType>GLOBAL_UNDEPLOY</contextType>
+      <contextType>GLOBAL_DEPLOY</contextType>
+      <contextType>SOURCE_FILTER_TRANSFORMER</contextType>
+      <contextType>DESTINATION_FILTER_TRANSFORMER</contextType>
+      <contextType>CHANNEL_BATCH</contextType>
+    </delegate>
+  </contextSet>
+  <properties class="com.mirth.connect.model.codetemplates.BasicCodeTemplateProperties">
+    <type>FUNCTION</type>
+    <code msync-fileref="CommonLogger.js"/>
+  </properties>
+</codeTemplate>

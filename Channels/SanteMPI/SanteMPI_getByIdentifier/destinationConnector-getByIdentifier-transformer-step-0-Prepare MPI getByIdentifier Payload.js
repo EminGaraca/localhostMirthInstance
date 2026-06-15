@@ -1,0 +1,1 @@
+SanteMPIIntegration.getByIdentifier();

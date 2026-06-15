@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><channelGroup version="4.4.2">
+  <id>45a5fcd9-4511-4666-93f2-b3f360879da2</id>
+  <name>IshMed Hospital Group</name>
+  <revision>1</revision>
+  <lastModified>
+    <time>1780326298951</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <description/>
+  <channels>
+    <channel version="4.4.2">
+      <id>fe3e7765-1035-4607-8f39-7cd0e6721edd</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>e6004e04-eea7-408f-8d5c-138d344d370a</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>4d840fb3-dcab-4ca0-89ef-2b52b6f353ae</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>e07ad2ec-373b-478e-8152-aa75d10f7aff</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>9dba902f-2e01-47fd-90b9-398760436f15</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>94e391b0-6911-45a9-bdcc-b331e554e451</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>adb76cfd-82de-408e-a482-38cb2ceff4aa</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>c2260e0f-e75e-429a-976e-c06bd6ff60e4</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>437204ce-7a0a-495b-b55d-a465650c1db5</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>8e08ad18-1354-4832-a5e4-5c4d344433b6</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>5aac53b0-0110-4ad8-975b-9d0bfc09b049</id>
+      <revision>0</revision>
+    </channel>
+  </channels>
+</channelGroup>

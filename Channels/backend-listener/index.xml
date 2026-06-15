@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><channelGroup version="4.4.2">
+  <id>913e7fd7-b19a-400e-a7b5-c8f976ca2403</id>
+  <name>backend-listener</name>
+  <revision>3</revision>
+  <lastModified>
+    <time>1761732740245</time>
+    <timezone>Europe/Sarajevo</timezone>
+  </lastModified>
+  <description/>
+  <channels>
+    <channel version="4.4.2">
+      <id>4b772c78-9cd0-422b-b7a2-04399cfc0f20</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>5c9e9411-a977-4ad7-9291-e61965adf2a4</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>31eac9d4-b29c-449d-9ecf-cdeadf233fe2</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>461a0cd0-e8b9-4ce3-9d0a-b32ed44689ed</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>d7002353-0168-4a40-9251-e135924c2893</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>ceac379b-3fc9-4a30-9527-1c2e5268db64</id>
+      <revision>0</revision>
+    </channel>
+    <channel version="4.4.2">
+      <id>0a60b193-366d-4ce6-9c45-f14f796e552d</id>
+      <revision>0</revision>
+    </channel>
+  </channels>
+</channelGroup>
