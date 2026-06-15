@@ -2,7 +2,7 @@
   Backend to the channels listener
 */
 function CommonBackend() {
-  //emin test from mirth instance
+  //emin test from mirth instance to commit on github
  const listTenant = Util2().cfg("tenant")
  const log = CommonLogger()
 
